@@ -1,0 +1,22 @@
+name: LagTrace
+description: Real-time Minecraft server performance diagnostics and lag hotspot detection.
+prefix: LagTrace
+version: '${version}'
+
+main: com.redstonecircuits.lagTrace.LagTrace
+api-version: '1.21.11'
+load: STARTUP
+
+authors:
+  - Redstone Circuits
+
+commands:
+  lagtrace:
+    description: Analyze the server for lag hotspots.
+    usage: /lagtrace
+    permission: lagtrace.admin
+
+permissions:
+  lagtrace.admin:
+    description: Allows access to LagTrace diagnostics.
+    default: op
